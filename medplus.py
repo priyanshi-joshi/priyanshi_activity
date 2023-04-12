@@ -8,11 +8,11 @@ If the user passes invalid parameters to the constructor method in that case rai
 class MedPlus:
     def _init_(self,medicine: str,batch_number: int,price: float):
         if type(medicine) is not str:
-            raise TypeError("Medicine should be of type string")
+            raise TypeError("Medicine is type string")
         if type(batch_number) is not int:
-            raise TypeError("Batch Number should be of type integer")
+            raise TypeError("Batch Number is type integer")
         if type(price) is not float:
-            raise TypeError("Price should be of type float")
+            raise TypeError("Price is type float")
         self.medicine = medicine
         self.batch_number = batch_number
         self.price = price
